@@ -1,4 +1,5 @@
 class GoalsController < ProtectedController
+  before_action :authenticate
   before_action :set_goal, only: [:show, :update, :destroy]
 
   # GET /goals
