@@ -1,7 +1,7 @@
 class GoalSerializer < ActiveModel::Serializer
-  attributes :id, :title, :description, :editable
+  attributes :id, :title, :description, :owned
 
-  def editable
+  def owned
     scope == object.user
   end
 end
