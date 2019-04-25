@@ -8,8 +8,7 @@ curl "http://localhost:4741/goals" \
   --data '{
     "goal": {
       "title": "'"${TITLE}"'",
-      "description": "'"${DESCRIPTION}"'",
-      "user_id": "'"${USER}"'"
+      "description": "'"${DESCRIPTION}"'"
     }
   }'
 
