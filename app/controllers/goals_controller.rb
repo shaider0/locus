@@ -18,7 +18,7 @@ class GoalsController < ProtectedController
     @goal = current_user.goals.build(goal_params)
 
     if @goal.save
-      render json: @goal, status: :created, location: @goal
+      render json: @goal, status: :created
     else
       render json: @goal.errors, status: :unprocessable_entity
     end
